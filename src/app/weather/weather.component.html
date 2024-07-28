@@ -1,0 +1,6 @@
+<div *ngIf="weather">
+  <h2>{{ weather.location.name }}</h2>
+  <p>Temperature: {{ weather.current.temp_c }}°C</p>
+  <p>Humidity: {{ weather.current.humidity }}%</p>
+  <p>Description: {{ weather.current.condition.text }}</p>
+</div>
