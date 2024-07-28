@@ -7,7 +7,7 @@ import { WeatherDetailsService } from '../weather-details.service';
   styleUrls: ['./search.component.scss'],
 })
 export class SearchComponent {
-  city: string = ''; // Initialize with a default value
+  city: string = '';
   @Output() weatherFetched = new EventEmitter<any>();
   constructor(private WeatherDetailsService: WeatherDetailsService) {}
 
